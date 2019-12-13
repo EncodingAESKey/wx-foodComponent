@@ -19,3 +19,6 @@ selectAll会选择所要含有该类名的盒子, 获取右侧商品列表每个
 ## 注意
 * 右侧第一个商品开始设oneShow=true,当它执行一次的时候就赋值为false,所以在第一类商品高度区域内只执行一次，如果到达第二类以上，就让oneShow=true回来，这样回滚的时候它又能执行
 * 右侧第一个商品以后，设置初始值zindex=0;如果不等于当前i值就让它执行，然后让它=i;第二次及而二次以上就不再执行，当它=i+1时又执行一次，然后在这个阶段就不再执行，以此类推
+
+## 效果图
+![gif](https://github.com/zhihuifanqiechaodan/wx-foodComponent/blob/wxFoodComponent/gif/index.gif?raw=true)
