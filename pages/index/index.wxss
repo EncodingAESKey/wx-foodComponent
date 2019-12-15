@@ -1,0 +1,171 @@
+/* pages/better1/scroll.wxss */
+
+.app-container {
+  display: flex;
+  /* position: absolute;
+  top: 174px;
+  bottom: 46px; */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 左侧菜单栏 */
+
+.app-comp-menuNav {
+  flex: 0 0 25vw;
+  height: 100vh;
+  background: #f3f5f7;
+}
+
+.app-comp-menuNav-item {
+  display: table;
+  width: 25vw;
+  height: 54px;
+  padding: 0 12px;
+  line-height: 14px;
+  box-sizing: border-box;
+}
+
+/* 激活时的样式 */
+
+.app-comp-menuNav-itemCurrent {
+  position: relative;
+  z-index: 10;
+  margin-top: -1px;
+  background: #fff;
+  font-weight: 700;
+}
+
+.app-comp-menuNav-itemCurrent .app-comp-menuNav-item-name::after {
+  border-top: none;
+}
+
+.app-comp-menuNav-item-name {
+  display: table-cell;
+  width: 56px;
+  vertical-align: middle;
+  position: relative;
+  font-size: 12px;
+}
+
+.app-comp-menuNav-item-name::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid rgba(7, 17, 27, 0.1);
+  content: '';
+}
+
+/* 右侧商品列表 */
+
+.app-comp-menuList {
+  flex: 1;
+  height: 100vh;
+}
+
+.app-comp-menuList-item-title {
+  padding-left: 14px;
+  height: 26px;
+  line-height: 26px;
+  border-left: 2px solid #d9dde1;
+  font-size: 12px;
+  color: #93999f;
+  background: #f3f5f7;
+}
+
+.app-comp-menuList-item-wrapper {
+  position: relative;
+  display: flex;
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.app-comp-menuList-item-wrapper::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid rgba(7, 17, 27, 0.1);
+  content: '';
+}
+
+.app-comp-menuList-item-wrapper::last-child {
+  margin-bottom: 0;
+  border: none;
+}
+
+/* 商品图片样式 */
+
+.app-comp-menuList-item-foodImg {
+  flex: 0 0 100px;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.app-comp-menuList-item-foodImg image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 商品信息 */
+
+.app-comp-menuList-item-food {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 商品标题 */
+
+.app-comp-menuList-item-food-title {
+  margin: 2px 0 8px 0;
+  height: 14px;
+  line-height: 14px;
+  font-size: 14px;
+  color: rgb(7, 17, 27);
+}
+
+/* 商品描述 */
+
+.app-comp-menuList-item-food-desc, .app-comp-menuList-item-food-extra {
+  line-height: 10px;
+  font-size: 10px;
+  color: rgb(147, 153, 159);
+}
+
+.app-comp-menuList-item-food-desc {
+  line-height: 12px;
+  margin-bottom: 8px;
+}
+
+/* 商品价格 */
+
+.app-comp-menuList-item-food-extra-count {
+  margin-right: 12px;
+}
+
+.app-comp-menuList-item-food-btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-comp-menuList-item-food-price {
+  font-weight: 700;
+  line-height: 26px;
+  margin-right: 8px;
+  font-size: 14px;
+  color: #f7695c;
+}
+
+/* 点菜按钮 */
+
+.icon-icon_roundadd_fill {
+  color: #f7695c;
+  font-size: 22px;
+}

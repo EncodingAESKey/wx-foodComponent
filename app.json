@@ -1,12 +1,37 @@
 {
   "pages": [
-    "index/index"
+    "pages/index/index",
+    "pages/pay/pay",
+    "pages/bill/bill"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#f7695c",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#f7695c",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "点单",
+        "iconPath": "/images/order.png",
+        "selectedIconPath": "/images/order_active.png"
+      },
+      {
+        "pagePath": "pages/pay/pay",
+        "text": "支付",
+        "iconPath": "/images/pay.png",
+        "selectedIconPath": "/images/pay_active.png"
+      },
+      {
+        "pagePath": "pages/bill/bill",
+        "text": "账单",
+        "iconPath": "/images/bill.png",
+        "selectedIconPath": "/images/bill_active.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

@@ -1,0 +1,34 @@
+<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+  <view class="modals-cancel" bindtap="hideModal"></view>
+  <view class="bottom-dialog-body bottom-pos" animation="{{animationData}}">
+    <view class="specpanel-container">
+      <view class="specpanel-comp-header">
+        <view class="specpanel-comp-header-img">
+          <image src="{{foodDetail.icon}}"></image>
+        </view>
+        <view class="specpanel-comp-header-desc">
+          <view class="specpanel-comp-header-desc-name">{{foodDetail.name}}</view>
+          <view class="specpanel-comp-header-desc-enname">{{foodDetail.description}}</view>
+          <view class="specpanel-comp-header-desc-enname">已选: {{tasteList[activeTaste].taste}}</view>
+          <view class="specpanel-comp-header-desc-price">
+            <text class="specpanel-comp-header-desc-price-ico">¥</text>
+            <text>{{foodDetail.price}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="specpanel-comp-body">
+        <view class="specpanel-comp-body-title">
+          <text>口味</text>
+        </view>
+        <view class="specpanel-comp-body-taste">
+          <view class="specpanel-comp-body-taste-item {{activeTaste == index ? 'specpanel-comp-body-taste-item-itemCurrent': ''}}" wx:for="{{tasteList}}" wx:key="{{item.id}}" data-taste="{{item}}" data-index="{{index}}" bindtap="tasteTap">
+            <text>{{item.taste}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="specpanel-comp-body-btn">
+        <button size="mini" bindtap="comfirmTastes">选好了</button>
+      </view>
+    </view>
+  </view>
+</view>

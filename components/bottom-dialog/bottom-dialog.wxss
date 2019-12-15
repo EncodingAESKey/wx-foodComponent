@@ -1,0 +1,161 @@
+/*模态框*/
+
+.modals {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modals-cancel {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bottom-dialog-body {
+  position: absolute;
+  z-index: 10001;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* padding: 30rpx; */
+  height: 70vh;
+  background-color: #fff;
+}
+
+/*动画前初始位置*/
+
+.bottom-pos {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* 口味菜品 */
+
+.specpanel-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.specpanel-comp-header {
+  display: flex;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.specpanel-comp-header-img {
+  width: 100px;
+  height: 100px;
+}
+
+.specpanel-comp-header-img image {
+  width: 100%;
+  height: 100%;
+}
+
+.specpanel-comp-header-desc {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.specpanel-comp-header-desc-name {
+  color: #333;
+  font-size: 15px;
+  font-weight: 700;
+  max-width: 50vw;
+  overflow: hidder;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  margin-bottom: 6px;
+}
+
+.specpanel-comp-header-desc-enname {
+  flex: 1;
+  color: #666;
+  font-size: 12px;
+}
+
+.specpanel-comp-header-desc-price {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(247, 105, 92);
+}
+
+.specpanel-comp-header-desc-price-ico {
+  font-size: 15px;
+}
+
+/* 口味菜品内容 */
+
+.specpanel-comp-body {
+  flex: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.specpanel-comp-body-title {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.specpanel-comp-body-taste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.specpanel-comp-body-taste-item {
+  display: inline-block;
+  min-width: 27vw;
+  padding: 0 2.666667vw;
+  min-height: 8.533333vw;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border-radius: 0.533333vw;
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: center;
+  line-height: 8.533333vw;
+  box-sizing: border-box;
+}
+
+/* 口味激活的样式 */
+
+.specpanel-comp-body-taste-item-itemCurrent {
+  font-weight: 700;
+  color: #f7695c;
+  background-color: rgba(247, 105, 92, 0.2);
+}
+
+/* 按钮 */
+
+.specpanel-comp-body-btn {
+  width: 100%;
+  height: 10vw;
+  border-radius: 0.5vw;
+  background: #f7695c;
+  overflow: hidden;
+}
+
+.specpanel-comp-body-btn button {
+  height: 10vw;
+  width: 100%;
+  line-height: 10vw;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  background: #f7695c;
+}
