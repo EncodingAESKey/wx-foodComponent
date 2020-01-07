@@ -21,4 +21,4 @@ selectAll会选择所要含有该类名的盒子, 获取右侧商品列表每个
 * 右侧第一个商品以后，设置初始值zindex=0;如果不等于当前i值就让它执行，然后让它=i;第二次及而二次以上就不再执行，当它=i+1时又执行一次，然后在这个阶段就不再执行，以此类推
 
 ## 效果图
-![gif](https://github.com/zhihuifanqiechaodan/wx-foodComponent/blob/wxFoodComponent/gif/index.gif?raw=true)
+![](https://github.com/zhihuifanqiechaodan/gif-demo/blob/master/gif/food.gif)
